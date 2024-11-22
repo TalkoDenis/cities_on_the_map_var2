@@ -20,7 +20,7 @@ def get_coordinates(cities):
 
 def create_map(data):
     """Создает карту с помощью Kepler.gl."""
-    df = pd.DataFrame(data)  # Преобразуем данные в DataFrame
+    df = pd.DataFrame(data)
     map_ = KeplerGl(height=600)
     map_.add_data(data=df, name="Cities")
     return map_
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         if data:
             map_ = create_map(data)
             # Сохраняем карту в HTML
-            map_.save_to_html(file_name="cities_map_kepler.html")
-            print("Map saved as 'cities_map_kepler.html'. Open it in your browser!")
+            map_.save_to_html(file_name="cities_map.html")
+            print("Map saved as 'cities_map.html'. Open it in your browser!")
         else:
             print("No valid coordinates to map.")
