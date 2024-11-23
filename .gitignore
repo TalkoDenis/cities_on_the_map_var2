@@ -222,7 +222,7 @@ pyenv.cfg
 *.woff
 *.eot
 *.html
-!cities_map.html
+!cities_map_kepler.html
 *.map
 *.png
 !kepler_map.png
