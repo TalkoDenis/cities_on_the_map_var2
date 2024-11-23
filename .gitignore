@@ -225,6 +225,7 @@ pyenv.cfg
 !cities_map.html
 *.map
 *.png
+!kepler_map.png
 *.ttf
 *.j2
 *.tpl
