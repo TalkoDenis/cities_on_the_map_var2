@@ -25,7 +25,7 @@ def get_coordinates(cities):
     return data
 
 def create_map(data, center_coordinates=(44.8176, 20.4633)):
-    """Create the map with center in Belgrade"""
+    """Creating the map with center in Belgrade"""
     df = pd.DataFrame(data)
     map_kepler = KeplerGl(height=600)
     if not df.empty:
